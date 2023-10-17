@@ -1,0 +1,59 @@
+{
+  "manifest_version": "2.0.0",
+  "app_uuid": "9567cd54-7fac-46d8-84ce-0b00cef6937e",
+  "app_id": "modal",
+  "display_on_public_website": true,
+  "tile": {
+    "overview": "README.md#Overview",
+    "configuration": "README.md#Setup",
+    "support": "README.md#Troubleshooting",
+    "changelog": "CHANGELOG.md",
+    "description": "Collect logs and metrics for your Modal applications",
+    "title": "Modal",
+    "media": [
+      {
+        "media_type": "image",
+        "caption": "Datadog Integration for Modal",
+        "image_url": "images/modal.jpg"
+      }
+    ],
+    "classifier_tags": [
+      "Supported OS::Linux",
+      "Supported OS::Windows",
+      "Supported OS::macOS",
+      "Category::Cloud",
+      "Category::Metrics",
+      "Category::Log Collection",
+      "Submitted Data Type::Metrics",
+      "Submitted Data Type::Logs",
+      "Offering::Integration"
+    ]
+  },
+  "assets": {
+    "dashboards": {
+      "Modal": "assets/dashboards/modal_overview.json"
+    }, 
+    "integration": {
+      "source_type_name": "Modal",
+      "events": {
+        "creates_events": false
+      },
+      "metrics": {
+        "metadata_path": "metadata.csv",
+        "check": [],
+        "prefix": "modal."
+      },
+      "service_checks": {
+        "metadata_path": "assets/service_checks.json"
+      }
+    },
+    "logs": {}
+  },
+  "author": {
+    "support_email": "support@modal.com",
+    "name": "Modal Labs",
+    "homepage": "https://modal.com",
+    "sales_email": "support@modal.com"
+  },
+  "oauth": {}
+}
