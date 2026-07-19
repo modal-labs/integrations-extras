@@ -1,5 +1,11 @@
 # CHANGELOG - Modal
 
+## 1.7.0 / 2026-07-19
+
+***Updated***:
+
+* Input elapsed time changed to gauge
+
 ## 1.6.0 / 2026-05-14
 
 ***Added***:
